@@ -90,3 +90,6 @@ ROBOTSTXT_OBEY = True
 # Set settings whose default value is deprecated to a future-proof value
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+FEED_URI = 'output.json'  # Path to your existing output file
+FEED_FORMAT = 'jsonlines'  # Use JSON Lines format to append data
+FEED_OVERWRITE = False  # Ensure the file is not overwritten (appends new data)

@@ -1,11 +1,39 @@
 import scrapy
 
-class CecSpider(scrapy.Spider):
-    name = 'cec_spider'
-    allowed_domains = ['ceconline.edu']
-    start_urls = ['https://ceconline.edu/','https://ceconline.edu/administrators/hari/','https://ceconline.edu/board-of-governors/','https://ceconline.edu/about/administration/administrative-staff/']
-
+class CombinedSpider(scrapy.Spider):
+    name = "combined"
+    start_urls = [
+        'https://ceconline.edu/board-of-governors/',  # Board of Governors URL
+        'https://ceconline.edu/administrators/hari/',  # Principal URL (adjust as necessary)
+    ]
+    
     def parse(self, response):
+        if 'board-of-governors' in response.url:
+            print("bog on")
+            yield from self.parse_board_of_governors(response)
+        elif 'hari' in response.url:
+            yield from self.parse_principal(response)
+
+    def parse_board_of_governors(self, response):
+        # Locate the table that contains "Board of Governors"
+        table = response.xpath('//div[@class="wpb_wrapper"]//table[contains(., "Board of Governors")]')
+        rows = table.xpath('.//tr[td]')
+
+        for row in rows:
+            name_designation = row.xpath('td[2]/text()').get()
+            designation = row.xpath('td[3]/text()').get()
+            role = row.xpath('td[4]/text()').get()
+
+            if name_designation and designation:
+                yield {
+                    'Board of Governors': {
+                        'Name and Designation': name_designation.strip(),
+                        'Designation': designation.strip(),
+                        'Role': role.strip() if role else '',
+                    }
+                }
+
+    def parse_principal(self, response):
         principal_name = response.css('.stm-title.stm-title_sep_bottom::text').extract_first().strip()
         qualification_titles = response.css('.wpb_wrapper ul span::text').getall()
         qualification_details = [q.strip() for q in response.css('.wpb_wrapper ul li::text').getall()]
