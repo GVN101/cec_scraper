@@ -93,3 +93,7 @@ FEED_EXPORT_ENCODING = "utf-8"
 FEED_URI = 'output.json'  # Path to your existing output file
 FEED_FORMAT = 'jsonlines'  # Use JSON Lines format to append data
 FEED_OVERWRITE = False  # Ensure the file is not overwritten (appends new data)
+ITEM_PIPELINES = {
+    'scrapy.pipelines.files.FilesPipeline': 1
+}
+FILES_STORE = 'downloaded_pdfs'  # Directory where PDFs will be saved

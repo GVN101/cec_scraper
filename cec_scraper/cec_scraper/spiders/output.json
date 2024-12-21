@@ -1,72 +1,33 @@
 {
-  "principal_name": "Prof. (Dr.) Hari. V S",
-  "principal's-academic-qualifications": {
-    "Communication Systems": "PhD  from Cochin University of Science and Technology for thesis entitled “Design, Development and Realization of Quadratic Volterra Filters for Selected Applications” in 2013.",
-    "POSITIONS HANDLED": "MTech in",
-    "PUBLICATIONS": "from Indian Institute of Technology, Madras in 2006.",
-    "FIELDS OF EXPERTISE": "BTech in Electronics and Communication from TKM College of Engineering, Kollam in 1994.",
-    "RESEARCH": "Desiree Juby Vincent & Hari V S , ” Classification of Letter Image from Scanned Receipts using CNN” , October 23. DOI:",
-    "INDUSTRY INTERACTION": "Blessy Babu & Hari V S, “Automatic Detection of Modulation Schemes using Convolutional Neural Networks”, June 2023.DOI:",
-    "BOOKS PUBLISHED": "Varsha P S & Hari V S, ” Intelligent Deep Learning based Receivers”, August 2023,DOI:"
-  },
-  "principal's-contact": {
-    "address": "Principal , College of Engineering, Chengannur,Alappuzha (Dist.) – 689121",
-    "tel": "0479-2450435",
-    "email": "principal@ceconline.edu"
-  },
-  "principal's-positions": [
-    "Associate Professor, Dept. of Electronics Engg, CE, Chengannur",
-    "Associate Professor and Head, Department of EC,CE, Karunagappally",
-    "Principal in charge, CE, Karunagappally",
-    "Associate Professor and Head, Department of EC, CE Karunagappally",
-    "Lecturer (Selection Grade), Department of EC, CE Kottarakkara",
-    "Lecturer (Senior Grade), Department of EC, CE Karunagappally",
-    "Lecturer, Department of EC, CE, Chengannur",
-    "Electronics Laboratory Handbook with Simulations using Quite Universal Circuit Simulator (Qucs), Authors Press,New Delhi,ISBN-978-93-5529-048-9",
-    "Logic Circuit Design Laboratory practice with Qucs, ICs, Verilog and Mini FPGA, Authors Press, New Delhi, ISBN – 978-93-5529-175-2"
+  "file_urls": [
+    "https://ceconline.edu/wpdata/admission/2023-24/nri_marklist.pdf",
+    "https://ceconline.edu/wpdata/admission/original_certificate_to_be_submitted.pdf",
+    "https://ceconline.edu/wpdata/admission/asmschdule.pdf"
   ],
-  "principal's-fields-of-expertise": [
-    "LATEX, PsTricks ,html, dia, Linux, xcircuit, LATEXDraw, C",
-    "python, QUCS, MATLAB, LabVIEW",
-    "Scipy, Numpy ,Keras, Tensorflow, Dash"
-  ],
-  "principal's-research": [
-    "Incorporated a company Rand Walk Research and Solutions Pvt. Ltd. on June 20,2020 under the Faculty startup scheme of the Govt.of Kerala. It is awarded the startup status by the Govt. of India. The company takes up projects in data analysis, machine learning and computer vision."
-  ],
-  "principal's-industry-interactions": [
-    "Minimization of atomic norm in vibration signals",
-    "Modeling the plasticity in friction stir ",
-    "welding",
-    "Sorting ",
-    "CrunchBase Data",
-    "Conversion of Telemetry data into Engineering ",
-    "units",
-    "Identification of Small Mechanical ",
-    "Parts",
-    "Implementation of Nomadic People Optimizer in ",
-    "Python",
-    "Identification of peaks in NMR ",
-    "data",
-    "Development of Recommender Systems for Automated Purchase",
-    "Identification of entities from images of receipts",
-    "Optimizationof Pune Mahanagar ",
-    "Parivahan ",
-    "Mahamandal Ltd. (PMPML) Bus ",
-    "Routes"
-  ],
-  "principal's-books-published": [
-    "Electronics Laboratory Handbook with Simulations using Quite Universal Circuit Simulator (Qucs), Authors Press,New Delhi,ISBN-978-93-5529-048-9",
-    "Logic Circuit Design Laboratory practice with Qucs, ICs, Verilog and Mini FPGA, Authors Press, New Delhi, ISBN – 978-93-5529-175-2"
+  "candidate_details_link": "/wpdata/admission/2023-24/nri_marklist.pdf",
+  "original_certificates_link": "/wpdata/admission/original_certificate_to_be_submitted.pdf",
+  "admission_schedule_link": "/wpdata/admission/asmschdule.pdf",
+  "candidate_details_text": "Candidate Details",
+  "original_certificates_text": "Original Certificates To Be Submitted",
+  "admission_schedule_text": "Admission Schedule",
+  "files": [
+    {
+      "url": "https://ceconline.edu/wpdata/admission/2023-24/nri_marklist.pdf",
+      "path": "full/6a5c627b33c3c61b7f13dd49f6aa510bb7f1758e.pdf",
+      "checksum": "550f9ef2e0fdf23a32332224287b3a2e",
+      "status": "downloaded"
+    },
+    {
+      "url": "https://ceconline.edu/wpdata/admission/original_certificate_to_be_submitted.pdf",
+      "path": "full/6d07ec19d8e63bf704f2411b667e41858cc45d5b.pdf",
+      "checksum": "a54d663ddad57bbb0082a59c2a47e992",
+      "status": "downloaded"
+    },
+    {
+      "url": "https://ceconline.edu/wpdata/admission/asmschdule.pdf",
+      "path": "full/929c84cbab8ce3b5ea114cea714bf0b50a57c0b0.pdf",
+      "checksum": "51a2023f9265d5ddf36c8b384dda0aa9",
+      "status": "downloaded"
+    }
   ]
 }
-{"Name and Designation": "Professor &  Head, Engineering Design  Dept, IIT, Madras", "Designation": "Chair Person", "Role": "Educationalist"}
-{"Name and Designation": "Prof. (Dr).P. Suresh Kumar, The Director, IHRD, Thiruvananthapuram.", "Designation": "Member", "Role": "Educationalist"}
-{"Name and Designation": "Dr. John Joseph, Head, Talent Acquisition, TCS", "Designation": "Member", "Role": "Industrialist"}
-{"Name and Designation": "Dr. Anil Kumar P, IT Consultant, Thiruvananthapuram", "Designation": "Member", "Role": "Industrialist"}
-{"Name and Designation": "Prof.(Dr.) Laila D., Professor", "Designation": "Member", "Role": "Educationalist"}
-{"Name and Designation": "Dr. Manju S Nair,", "Designation": "Member", "Role": "Educationalist"}
-{"Name and Designation": "Dr.R Sakthivel, Regional Officer, SWRO Camp Office, Thiruvananthapuram", "Designation": "Member", "Role": ""}
-{"Name and Designation": "The Principal,", "Designation": "Member", "Role": ""}
-{"Name and Designation": "The Finance Officer of the concerned Collectorate", "Designation": "Member", "Role": ""}
-{"Name and Designation": "University Nominee", "Designation": "Member", "Role": "Educationalist"}
-{"Name and Designation": "Prof.(Dr.) Smitha Dharan", "Designation": "Member", "Role": "Educationalist"}
