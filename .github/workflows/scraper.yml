@@ -29,10 +29,13 @@ jobs:
         cd cec_scraper
         scrapy crawl principal_spider  # Runs the spider
     
-    - name: Commit Results (Optional)
+    - name: Commit Results
       run: |
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
         git add cec_scraper/output/*
         git commit -m "Update scraped data [$(date)]" || echo "No changes to commit"
         git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
