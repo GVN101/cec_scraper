@@ -1,10 +1,10 @@
-name: Run Web Scraper
+name: Run Principal Spider
 
 on:
   schedule:
-    # Run every day at 2 AM (UTC)
-    - cron: '0 2 * * *'
-  workflow_dispatch:  # Allows manual trigger from GitHub UI
+    # Run every day at 3 AM (UTC)
+    - cron: '0 3 * * *'
+  workflow_dispatch:  # Manual trigger
 
 jobs:
   scrape:
@@ -22,15 +22,17 @@ jobs:
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt  # Make sure scraper dependencies are listed
+        pip install -r cec_scraper/requirements.txt  # Ensure dependencies are installed
     
-    - name: Run Scraper
-      run: python principal_scraper.py  # Run your scraping script
+    - name: Run Principal Spider
+      run: |
+        cd cec_scraper
+        scrapy crawl principal  # Runs your Scrapy spider
     
     - name: Commit Results (Optional)
       run: |
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
-        git add scraped_data.json
+        git add cec_scraper/output/*
         git commit -m "Update scraped data [$(date)]" || echo "No changes to commit"
         git push
