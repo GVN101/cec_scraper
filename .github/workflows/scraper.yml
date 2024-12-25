@@ -27,7 +27,7 @@ jobs:
     - name: Run Principal Spider
       run: |
         cd cec_scraper
-        scrapy crawl principal  # Runs the spider
+        scrapy crawl principal_spider  # Runs the spider
     
     - name: Commit Results (Optional)
       run: |
