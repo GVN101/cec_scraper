@@ -2,8 +2,8 @@ name: Run Principal Spider
 
 on:
   schedule:
-    # Run every day at 3 AM (UTC)
-    - cron: '0 3 * * *'
+    # Run every minute
+    - cron: '*/1 * * * *'
   workflow_dispatch:  # Manual trigger
 
 jobs:
@@ -22,12 +22,12 @@ jobs:
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r cec_scraper/requirements.txt  # Ensure dependencies are installed
+        pip install -r cec_scraper/requirements.txt
     
     - name: Run Principal Spider
       run: |
         cd cec_scraper
-        scrapy crawl principal  # Runs your Scrapy spider
+        scrapy crawl principal  # Runs the spider
     
     - name: Commit Results (Optional)
       run: |
